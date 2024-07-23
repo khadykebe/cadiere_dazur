@@ -1,0 +1,272 @@
+
+
+  .calendar {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  }
+
+  button {
+    margin: 10px;
+
+  }
+
+  .week {
+    display:flex;
+    /* flex-direction: column; */
+  }
+
+  .day {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .hours {
+    display: block;
+    overflow-x: auto;
+    /* margin-left: 5px; */
+    margin-top: 10px;
+  }
+
+  .hour {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    cursor: pointer;
+    /* flex-direction: column; */
+
+  }
+
+  .hour:hover {
+    background-color: #4CAF50;;
+  }
+
+  #selected-info {
+    margin-top: 20px;
+  }
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+}
+
+nav {
+    background-color: #ddd;
+    width: 100%;
+    padding: 1em 0;
+    display: block;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav ul li button:hover {
+    background-color: #0056b3;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80px;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+
+    .vertical-list {
+        list-style-type: none;
+        padding: 0px;
+
+    }
+
+    .vertical-list li {
+        padding: 10px ;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        border-bottom: 1px solid #ddd;
+        font-weight:300;
+        color: #aeaeae;
+        font-family: Arial, sans-serif;
+
+
+    }
+
+    .vertical-list li:hover {
+        background-color: #e9ecef;
+    }
+    h4{
+        /* color:#aeaeae; */
+        /* margin-bottom: 50px; */
+    }
+    .InfoPatient{
+        /* margin-top: 10px; */
+        padding: 10px;
+    }
+    h6{
+        margin: 15px;
+    }
+    .card-body{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+/* Table Container */
+.table-container {
+    margin: 20px auto;
+    max-width: 80%;
+    overflow-x: auto;
+}
+
+/* Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+
+/* Table Header */
+.table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Table Body Rows */
+.table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+/* Table Cells */
+.table th, .table td {
+    padding: 12px 15px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-buttons button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.action-buttons .edit-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.action-buttons .delete-button {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.action-buttons .edit-button:hover,
+.action-buttons .delete-button:hover {
+    opacity: 0.8;
+}

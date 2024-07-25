@@ -39,7 +39,7 @@ Route::post('add',[UserController::class,'AddPl'])->name('add.planning');
 
 // rv
 
-Route::get('/rendez-vous',[RvController::class,'AllRv'])->name('liste-Rv');
+Route::get('/rendez-vous',[UserController::class,'AllRv'])->name('liste-Rv');
 Route::put('/rendez-vous/{id}', [UserController::class, 'update'])->name('rv.update');
 Route::delete('/rendez-vous/{id}', [UserController::class, 'destroy'])->name('rv.destroy');
 

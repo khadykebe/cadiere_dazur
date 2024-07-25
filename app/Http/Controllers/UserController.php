@@ -108,7 +108,8 @@ class UserController extends Controller
     public function destroy($id)
     {
         Rv::find($id)->delete();
-        return $this->AllRv()->with('success', 'Rendez-vous supprimé avec succès.');
+        return redirect()->route('liste-Rv')->with('success', 'Rendez-vous supprimé avec succès.');
+        // return $this->AllRv()->with('success', 'Rendez-vous supprimé avec succès.');
     }
 
 

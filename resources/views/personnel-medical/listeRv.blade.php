@@ -105,7 +105,7 @@
             <div class="modal-content">
                 <form id="deleteForm" method="POST" action="{{route('rv.destroy',$r->id)}}">
                     @csrf
-                    {{-- @method('DELETE') --}}
+                    @method('DELETE')
                     <div class="modal-header">
                         <h5 class="modal-title" id="deleteModalLabel">Supprimer le Rendez-vous</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">

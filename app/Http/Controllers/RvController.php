@@ -93,7 +93,7 @@ class RvController extends Controller
                         return view('rendez-vous.mammo',compact('consult','medecin','text1','text2'));
                     }
                     elseif ($tmp == 1 && $data == 'Echographie') {
-                       
+
                         return view('rendez-vous.echo',compact('consult','medecin','text1','text2'));
                     }
                     return redirect()->route('index')->with('alert1','Il n y a de Médecin disponible pour Cette heure');;
@@ -124,7 +124,7 @@ class RvController extends Controller
 
     public function PatientAsRvEcho(Request $request){
 
-        $radio = new Rodio;
+        $radio = new Echog;
         $radio->jour = session('jour');
         $radio->heure = session('heure');
         $radio->save();
@@ -142,7 +142,7 @@ class RvController extends Controller
 
     public function PatientAsRvMammo(Request $request){
 
-        $radio = new Rodio;
+        $radio = new Mammo;
         $radio->jour = session('jour');
         $radio->heure = session('heure');
         $radio->save();

@@ -8,15 +8,10 @@ use App\Http\Controllers\Auth;
 
 
 
-Route::get('/', function () {
-    return view('Home');
-});
+Route::get('/', function (){return view('Home');});
 
 Route::get('list', function () {return view('medecin.listeRV');})->name('all.rv');
 Route::post('logout', [UserController::class, 'logout'])->name('logout');
-
-
-
 
 Route::get('/consultation',[RvController::class,'index'])->name('index');
 Route::get('/consultation/{data}',[RvController::class,'RV'])->name('rv.creat');
@@ -25,10 +20,6 @@ Route::get('/receive-data', [RvController::class,'ConsultEcho'])->name('time');
 Route::post('radioRV',[RvController::class,'PatientAsRvRadio'])->name('rv.radio');
 Route::post('echoRV',[RvController::class,'PatientAsRvEcho'])->name('rv.echo');
 Route::post('mammoRv',[RvController::class,'PatientAsRvMammo'])->name('rv.mammo');
-
-// Route::post('/radioRV',[RvController::class,'PatientAsRvRadio'])->name('rv_radio');
-// Route::post('/echoRV',[RvController::class,'PatientAsRvEcho'])->name('rv_echo');
-// Route::post('/mammoRV',[RvController::class,'PatientAsRvMammo'])->name('rv_mammo');
 
 Route::get('allRv',[RvController::class,'liste']);
 Route::get('allCt',[UserController::class,'index']);

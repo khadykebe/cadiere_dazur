@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\models\User;
-use App\models\Categorie;
-use App\models\Planning;
-use App\models\Rv;
+use App\Models\User;
+use App\Models\Categorie;
+use App\Models\Planning;
+use App\Models\Rv;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
 

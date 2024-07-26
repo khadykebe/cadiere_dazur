@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use App\models\Categorie;
-use App\models\Date;
-use App\models\Rv;
-use App\models\User;
-use App\models\planning;
-use App\models\Rodio;
-use App\models\Mammo;
-use App\models\Echog;
+use App\Models\Categorie;
+use App\Models\Date;
+use App\Models\Rv;
+use App\Models\User;
+use App\Models\planning;
+use App\Models\Rodio;
+use App\Models\Mammo;
+use App\Models\Echog;
 use Illuminate\Support\Facades\DB;
 
 class RvController extends Controller

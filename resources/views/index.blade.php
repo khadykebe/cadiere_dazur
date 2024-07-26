@@ -111,7 +111,6 @@
               </div>
             </div>
         </div>
-
     </div>
 </div>
 
@@ -218,7 +217,7 @@
 
   <script>
 
-    
+
     // Get the modals
     var loginModal = document.getElementById("loginModal");
     var signupModal = document.getElementById("signupModal");
